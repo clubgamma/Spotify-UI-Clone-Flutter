@@ -7,6 +7,8 @@
 1.  If you are new to Git and GitHub, it is advisable that you go through
     [GitHub For Beginners](http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/)
     **before** moving to ahead.
+    
+2. Pick any issue you want to work on from the [issues](https://github.com/clubgamma/Spotify-UI-Clone-Flutter/issues), discuss with maintainer on issue and then start.
 
 2.  Fork the project on GitHub.
     [Help Guide to Fork a Repository](https://help.github.com/en/articles/fork-a-repo/).
