@@ -1,8 +1,8 @@
-  - **READ CODE OF CONDUCT**
+  - **READ CODE OF CONDUCT** 
      
      Read the [Code of Conduct](https://github.com/clubgamma/code-of-conduct) before starting contributing.
 
-### Getting Started
+### Getting Started ###
 
 1.  If you are new to Git and GitHub, it is advisable that you go through
     [GitHub For Beginners](http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/)
