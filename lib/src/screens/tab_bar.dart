@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:spotify_ui_clone/src/screens/home_screen.dart';
 
 class TabBarScreen extends StatefulWidget {
   @override
@@ -6,17 +7,19 @@ class TabBarScreen extends StatefulWidget {
 }
 
 class _TabBarScreenState extends State<TabBarScreen> {
-
-
-
   int _currentIndex;
 
-   @override
+  List<Widget> _pageList = [
+    HomeScreen(),
+    HomeScreen(),
+    HomeScreen(),
+  ];
+
+  @override
   void initState() {
     super.initState();
-    _currentIndex=0;
+    _currentIndex = 0;
   }
-
 
   _onPageSelected(int index) {
     setState(() {
@@ -28,7 +31,7 @@ class _TabBarScreenState extends State<TabBarScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Container(),
+        child: _pageList[_currentIndex],
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
