@@ -1,5 +1,8 @@
+import 'package:animations/animations.dart';
 import 'package:flutter/material.dart';
 import 'package:spotify_ui_clone/src/screens/home_screen.dart';
+import 'package:spotify_ui_clone/src/screens/library_screen.dart';
+import 'package:spotify_ui_clone/src/screens/search_screen.dart';
 
 class TabBarScreen extends StatefulWidget {
   @override
@@ -11,8 +14,8 @@ class _TabBarScreenState extends State<TabBarScreen> {
 
   List<Widget> _pageList = [
     HomeScreen(),
-    HomeScreen(),
-    HomeScreen(),
+    SearchScreen(),
+    LibScreen(),
   ];
 
   @override
@@ -31,7 +34,16 @@ class _TabBarScreenState extends State<TabBarScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: _pageList[_currentIndex],
+        child: PageTransitionSwitcher(
+          transitionBuilder: (child, primaryAnimation, secondaryAnimation) {
+            return FadeThroughTransition(
+              animation: primaryAnimation,
+              secondaryAnimation: secondaryAnimation,
+              child: child,
+            );
+          },
+          child: _pageList[_currentIndex],
+        ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
