@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:spotify_ui_clone/src/screens/tab_bar.dart';
+import 'screens/settings_screen.dart';
 
 class SpotifyClone extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Spotify-ClubGamma',
       themeMode: ThemeMode.dark,
       theme: ThemeData(
@@ -21,6 +23,9 @@ class SpotifyClone extends StatelessWidget {
         ),
       ),
       home: TabBarScreen(),
+      routes: {
+        SettingsScreen.routeName: (ctx) => SettingsScreen(),
+      },
     );
   }
 }
