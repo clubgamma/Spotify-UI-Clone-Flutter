@@ -99,14 +99,14 @@ class HomeTabState extends State<HomeTab> {
               child: Column(
                 children: <Widget>[
                   Padding(
-                    padding: const EdgeInsets.only(top: 16.0),
+                    padding: const EdgeInsets.only(top: 10.0),
                     child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: <Widget>[
-                        Text('Recently Played',
+                        Text('     Recently Played',
                             style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 18,
+                                fontSize: 24,
                                 fontWeight: FontWeight.bold))
                       ],
                     ),
@@ -121,12 +121,12 @@ class HomeTabState extends State<HomeTab> {
                   Padding(
                     padding: const EdgeInsets.only(top: 16.0),
                     child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: <Widget>[
-                        Text('Your Heavy Rotation',
+                        Text('     Your Heavy Rotation',
                             style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 18,
+                                fontSize: 20,
                                 fontWeight: FontWeight.bold))
                       ],
                     ),
@@ -141,12 +141,12 @@ class HomeTabState extends State<HomeTab> {
                   Padding(
                     padding: const EdgeInsets.only(top: 16.0),
                     child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: <Widget>[
-                        Text('Made for bimsina',
+                        Text('     Made for bimsina',
                             style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 18,
+                                fontSize: 20,
                                 fontWeight: FontWeight.bold))
                       ],
                     ),

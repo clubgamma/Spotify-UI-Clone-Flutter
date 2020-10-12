@@ -76,7 +76,7 @@ class SearchTab extends StatelessWidget {
                             children: <Widget>[
                               Padding(
                                 padding:
-                                EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 0.0),
+                                EdgeInsets.fromLTRB(0.0, 0.0, 8.0, 0.0),
                                 child: Icon(Icons.search),
                               ),
                               Text('Artists,Songs or Podcasts',
