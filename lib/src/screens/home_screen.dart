@@ -16,7 +16,7 @@ class HomeTab extends StatefulWidget {
 
 class HomeTabState extends State<HomeTab> {
   bool isShown = true;
-  bool isPlaying = false;
+  bool isPlaying = true;
   final List<Artist> recentlyPlayed = [
     Artist(
         imageSrc: "assets/favourite.jpg",
