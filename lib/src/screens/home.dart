@@ -12,17 +12,21 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int _currentIndex = 0;
   bool isPlaying = true;
+
   var _value = 0.0;
   void handlePressed() {
     print('Hello');
     setState(() {
       isPlaying = true;
+
     });
   }
 
   Widget songPlaying() {
     return Scaffold(
+
       backgroundColor: Colors.black,
+
       body: Container(
         width: double.infinity,
         height: double.infinity,
@@ -31,6 +35,7 @@ class _HomePageState extends State<HomePage> {
           image: DecorationImage(
 
             image: AssetImage('assets/this_is_post_malone.jpg'),
+
           ),
         ),
         child: Container(
@@ -68,7 +73,7 @@ class _HomePageState extends State<HomePage> {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  'Post Malone',
+              'Post Malone',
                   style: TextStyle(color: Colors.grey, fontSize: 18),
                 ),
               ),
@@ -97,11 +102,13 @@ class _HomePageState extends State<HomePage> {
                     IconButton(
                       iconSize: 30,
                       icon: Icon(Icons.favorite_border, color: Colors.grey),
+
                       onPressed: () {},
                     ),
                     IconButton(
                       iconSize: 30,
                       icon: Icon(Icons.skip_previous, color: Colors.grey),
+
                       onPressed: () {},
                     ),
                     IconButton(
@@ -111,6 +118,7 @@ class _HomePageState extends State<HomePage> {
                               ? Icons.pause_circle_filled
                               : Icons.play_circle_filled,
                           color: Colors.grey),
+
                       onPressed: () {
                         setState(() {
                           if (isPlaying) {
@@ -129,6 +137,7 @@ class _HomePageState extends State<HomePage> {
                     IconButton(
                       iconSize: 30,
                       icon: Icon(Icons.clear, color: Colors.grey),
+
                       onPressed: () {},
                     ),
                   ],

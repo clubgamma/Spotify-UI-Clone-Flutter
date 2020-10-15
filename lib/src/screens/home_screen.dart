@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_icons/flutter_icons.dart';
+import 'package:spotify_ui_clone/src/screens/settings_screen.dart';
 
 import 'package:flutter/material.dart';
 
@@ -16,7 +18,7 @@ class HomeTab extends StatefulWidget {
 
 class HomeTabState extends State<HomeTab> {
   bool isShown = true;
-  bool isPlaying = true;
+  bool isPlaying = false;
   final List<Artist> recentlyPlayed = [
     Artist(
         imageSrc: "assets/favourite.jpg",
@@ -70,7 +72,6 @@ class HomeTabState extends State<HomeTab> {
   void handleTap() {
     print('hello');
   }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -85,7 +86,12 @@ class HomeTabState extends State<HomeTab> {
               actions: <Widget>[
                 IconButton(
                   icon: Icon(Icons.settings),
-                  onPressed: () {},
+                  onPressed: () {
+                     Navigator.push(context, MaterialPageRoute(
+                 builder: (context) => SettingsScreen()
+               ));
+                  },
+
                 )
               ],
             ),
