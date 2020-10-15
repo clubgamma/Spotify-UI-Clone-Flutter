@@ -23,7 +23,26 @@ dev_dependencies:
     sdk: flutter
 
 flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
 
+  # To add assets to your application, add an assets section, like this:
+  assets:
+     - assets/pink_floyd.jpg
+     - assets/this_is_pink_floyd.jpg
+     - assets/this_is_post_malone.jpg
+     - assets/this_is_queen.jpg
+     - assets/stoney.jpg
+     - assets/hailee.jpg
+     - assets/queen_best_of.jpg
+     - assets/favourite.jpg
+     - assets/discover.jpg
+     - assets/time_capsule.jpg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
 
   uses-material-design: true
 
