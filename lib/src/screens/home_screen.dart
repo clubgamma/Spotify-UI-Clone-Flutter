@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_icons/flutter_icons.dart';
+import 'package:spotify_ui_clone/src/screens/settings_screen.dart';
 
 import 'package:flutter/material.dart';
 

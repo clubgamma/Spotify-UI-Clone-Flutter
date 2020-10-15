@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-
 class SpotifyClone extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Spotify-ClubGamma',
       theme: ThemeData(
         canvasColor: Color.fromRGBO(18, 18, 18, 1),
@@ -19,6 +19,7 @@ class SpotifyClone extends StatelessWidget {
         //   unselectedItemColor: Color.fromRGBO(119, 119, 119, 1),
         // ),
       ),
+
  //     home: TabBarScreen(),
     );
   }
