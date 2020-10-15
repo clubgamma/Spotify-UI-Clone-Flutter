@@ -87,7 +87,11 @@ class HomeTabState extends State<HomeTab> {
               actions: <Widget>[
                 IconButton(
                   icon: Icon(Icons.settings),
-                  onPressed: () {},
+                  onPressed: () {
+                     Navigator.push(context, MaterialPageRoute(
+                 builder: (context) => SettingsScreen()
+               ));
+                  },
                 )
               ],
             ),

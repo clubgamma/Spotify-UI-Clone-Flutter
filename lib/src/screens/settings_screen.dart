@@ -16,8 +16,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
       return Padding(
         padding: EdgeInsets.only(left: 2, right: 2),
         child: InkWell(
-          splashColor: Colors.black,
-          highlightColor: Colors.black,
+          splashColor: Color.fromRGBO(40, 40, 40, 1,),
+          highlightColor: Color.fromRGBO(40, 40, 40, 1),
           onTap: tapHandler,
           child: ListTile(
             leading: CircleAvatar(
@@ -48,7 +48,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               ],
             ),
             trailing: Icon(
-              Icons.arrow_forward_ios_outlined,
+              Icons.arrow_back,
               color: Colors.white,
             ),
           ),
@@ -75,7 +75,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               style: GoogleFonts.raleway(fontSize: 20, color: Colors.white),
             ),
             trailing: Icon(
-              Icons.arrow_forward_ios_outlined,
+              Icons.arrow_back,
               color: Colors.white,
             ),
           ),
@@ -103,22 +103,25 @@ class _SettingsScreenState extends State<SettingsScreen> {
           style: TextStyle(fontSize: 20, color: Colors.white),
         ),
       ),
-      body: ListView(
-        children: [
-          SizedBox(height: 20),
-          buildProfileTile('Afrobeezy', () {}, context),
-          SizedBox(height: 40),
-          buildListTile('Data Saver', () {}, context),
-          buildListTile('Account', () {}, context),
-          buildListTile('Playback', () {}, context),
-          buildListTile('Explicit Content', () {}, context),
-          buildListTile('Car', () {}, context),
-          buildListTile('Social', () {}, context),
-          buildListTile('Connected to Apps', () {}, context),
-          buildListTile('Music Quality', () {}, context),
-          buildListTile('Storage', () {}, context),
-          buildListTile('Notifications', () {}, context),
-        ],
+      body: Container(
+        color: Color(0xff121212),
+        child: ListView(
+          children: [
+            SizedBox(height: 20),
+            buildProfileTile('Afrobeezy', () {}, context),
+            SizedBox(height: 40),
+            buildListTile('Data Saver', () {}, context),
+            buildListTile('Account', () {}, context),
+            buildListTile('Playback', () {}, context),
+            buildListTile('Explicit Content', () {}, context),
+            buildListTile('Car', () {}, context),
+            buildListTile('Social', () {}, context),
+            buildListTile('Connected to Apps', () {}, context),
+            buildListTile('Music Quality', () {}, context),
+            buildListTile('Storage', () {}, context),
+            buildListTile('Notifications', () {}, context),
+          ],
+        ),
       ),
     );
   }
