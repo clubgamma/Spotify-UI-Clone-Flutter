@@ -11,25 +11,31 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int _currentIndex = 0;
-  bool isPlaying = false;
+  bool isPlaying = true;
+
   var _value = 0.0;
   void handlePressed() {
     print('Hello');
     setState(() {
-      isPlaying = false;
+      isPlaying = true;
+
     });
   }
 
   Widget songPlaying() {
     return Scaffold(
+
+      backgroundColor: Colors.black,
+
       body: Container(
         width: double.infinity,
         height: double.infinity,
         decoration: BoxDecoration(
           shape: BoxShape.rectangle,
           image: DecorationImage(
-            fit: BoxFit.cover,
-            image: AssetImage('assets/bohemian.jpg'),
+
+            image: AssetImage('assets/this_is_post_malone.jpg'),
+
           ),
         ),
         child: Container(
@@ -60,14 +66,14 @@ class _HomePageState extends State<HomePage> {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  'Bohemian Rhapsody - Remastered',
+                  'Go Flex',
                   style: TextStyle(color: Colors.white, fontSize: 20),
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  'Queen',
+              'Post Malone',
                   style: TextStyle(color: Colors.grey, fontSize: 18),
                 ),
               ),
@@ -95,12 +101,14 @@ class _HomePageState extends State<HomePage> {
                   children: <Widget>[
                     IconButton(
                       iconSize: 30,
-                      icon: Icon(Icons.favorite_border, color: Colors.white),
+                      icon: Icon(Icons.favorite_border, color: Colors.grey),
+
                       onPressed: () {},
                     ),
                     IconButton(
                       iconSize: 30,
-                      icon: Icon(Icons.skip_previous, color: Colors.white),
+                      icon: Icon(Icons.skip_previous, color: Colors.grey),
+
                       onPressed: () {},
                     ),
                     IconButton(
@@ -109,7 +117,8 @@ class _HomePageState extends State<HomePage> {
                           isPlaying
                               ? Icons.pause_circle_filled
                               : Icons.play_circle_filled,
-                          color: Colors.white),
+                          color: Colors.grey),
+
                       onPressed: () {
                         setState(() {
                           if (isPlaying) {
@@ -122,12 +131,13 @@ class _HomePageState extends State<HomePage> {
                     ),
                     IconButton(
                       iconSize: 30,
-                      icon: Icon(Icons.skip_next, color: Colors.white),
-                      onPressed: () {},
+                      icon: Icon(Icons.skip_next, color: Colors.grey),
+                      onPressed: () {}
                     ),
                     IconButton(
                       iconSize: 30,
-                      icon: Icon(Icons.clear, color: Colors.white),
+                      icon: Icon(Icons.clear, color: Colors.grey),
+
                       onPressed: () {},
                     ),
                   ],

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 class SpotifyClone extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -19,7 +18,6 @@ class SpotifyClone extends StatelessWidget {
         //   unselectedItemColor: Color.fromRGBO(119, 119, 119, 1),
         // ),
       ),
-
  //     home: TabBarScreen(),
     );
   }

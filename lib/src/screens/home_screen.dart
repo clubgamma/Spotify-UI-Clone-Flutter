@@ -72,7 +72,6 @@ class HomeTabState extends State<HomeTab> {
   void handleTap() {
     print('hello');
   }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -92,6 +91,7 @@ class HomeTabState extends State<HomeTab> {
                  builder: (context) => SettingsScreen()
                ));
                   },
+
                 )
               ],
             ),

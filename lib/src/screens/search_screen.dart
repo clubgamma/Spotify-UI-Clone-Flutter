@@ -37,7 +37,7 @@ class SearchTab extends StatelessWidget {
                   title: Text("Search",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 18.0,
+fontSize: 18.0,
                       )),
                   background: Container(
                     decoration: new BoxDecoration(
